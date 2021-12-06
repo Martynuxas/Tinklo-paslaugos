@@ -1,0 +1,61 @@
+//set the language version
+syntax = "proto3";
+
+//this will translate into C# namespace
+package Services;
+
+//this will translate into server and client stub
+service Service {    
+    //this is will translate into a service operation
+    rpc CheckTank(CheckInput) returns (CheckOutput) {}
+    rpc RemoveGasAmount(RemoveGasInput) returns (RemoveGasOutput) {}
+    rpc GiveReputation(ReputationInput) returns (ReputationOutput) {}
+    rpc FillGasStation(FillInput) returns (FillOutput) {}
+    rpc CheckForFilling(CheckForFillingInput) returns (CheckForFillingOutput) {}
+    rpc CheckQueue(CheckQueueInput) returns (CheckQueueOutput) {}
+    rpc SetQueue(SetQueueInput) returns (SetQueueOutput) {}
+}
+
+
+message FillInput {
+    double amount = 1;
+}
+message FillOutput {
+    double value = 1;
+}
+message CheckForFillingInput {
+    double amount = 1;
+}
+message CheckForFillingOutput {
+    double value = 1;
+}
+message CheckInput {
+    double amount = 1;
+}
+message CheckOutput {
+    bool value = 1;
+}
+message RemoveGasInput {
+    double amount = 1; 
+}
+message RemoveGasOutput {
+    double value = 1;
+}
+message ReputationInput {
+    double amount = 1; 
+}
+message ReputationOutput {
+    double value = 1;
+}
+message SetQueueInput {
+    bool value = 1; 
+}
+message SetQueueOutput {
+    bool value = 1;
+}
+message CheckQueueInput {
+    bool value = 1; 
+}
+message CheckQueueOutput {
+    bool value = 1;
+}

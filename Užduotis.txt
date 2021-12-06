@@ -1,0 +1,32 @@
+Degalinė(Serveris), automobilis, tankeris
+
+Būsena: degalų kiekis | apatinė riba | reputacija | ar reikia papildyti.
+
+
+Automobiliai periodiškai generuoja atsitiktinius teigiamus reikiamų degalų kiekius.
+Jeigu degalinėje užtenka degalų, sugeneruotas kiekis atimamas iš degalinės, ir
+degalinės reputacija padidėja 1. Jeigu degalinėje degalų neužtenka, automobilis
+negauna nieko, ir degalinės reputacija sumažėja 5. Jeigu degalų kiekis pasiekia
+apatinę ribą, tankeris sugeneruoja atsitiktinį degalų kiekį ir juo papildo degalinę.
+Vieno apatinės ribos pasiekimo rėmuose, degalinę gali papildyti tik tiek tankerių,
+kiek tenkina formulę '1 + round((100 - reputacija) / 50)'. Reputacija negali išeiti už intervalo [0;100].
+
+Degalinės klasė:
+-Turi saugoti: DEGALUS, REPUTACIJA.+
+-Patikrinti ar degalinė turi tiek degalų.+
+-Atimti tam tikra skaičių degalų.+
+-Pridėti +1 reputacija.
+-Jei degalų kiekis pasiekia apatine riba, pridėti tankerius pagal formule.
+
+Automobilis klasė:
++ - Random generuoti reikiamus degalų kiekius [ 1 - 100 ]
+----- Jei tiek degalų degalinė turi, atimti iš jos juos ir padidinti reputacija +1[negali but daugiau 100]
+----- Jei degalų degalinėje tiek nėra, reputacija sumažinam -5[negali but mažiau 0]
+
+GetReputation
+
+Tankerio klasė:
+-Žiurėti ar reikia papildymo.
+-Sugeneruoti atsitiktinį degalų kiekį ir paduoti.
+Degalinės:
+Jei pasibaige degalai, padaryti reikšmę į kiek tankerių reik, jei 0 tai nereik, jei virš 0, minusuot po viena tankerį kol bus nulis.

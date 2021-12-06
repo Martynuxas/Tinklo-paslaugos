@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ec6b3094-4ce1-4ac5-b2a8-fbe011502f5e": {
+      "ProjectGuid": "ec6b3094-4ce1-4ac5-b2a8-fbe011502f5e",
+      "DisplayName": "TankerDedicatedQueues",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

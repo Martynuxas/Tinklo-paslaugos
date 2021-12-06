@@ -1,0 +1,27 @@
+//set the language version
+syntax = "proto3";
+
+//this will translate into C# namespace
+package Services;
+
+import "google/protobuf/empty.proto";
+
+//this will translate into server and client stub
+service Service {    
+    //this is will translate into a service operation
+    rpc FillGasStation(FillInput) returns (FillOutput) {}
+    rpc CheckForFilling(CheckForFillingInput) returns (CheckForFillingOutput) {}
+}
+
+message FillInput {
+    double amount = 1;
+}
+message FillOutput {
+    double value = 1;
+}
+message CheckForFillingInput {
+    double amount = 1; 
+}
+message CheckForFillingOutput {
+    double value = 1; 
+}
