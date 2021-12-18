@@ -1,0 +1,6 @@
+#install dotnet-svcutil for current user
+dotnet tool install --global dotnet-svcutil
+
+#use dotnet-svcutil to generate SOAP client in current project
+#if you run this in Linux, you need to have dotnet sdk 2.1 installed, otherwise the tool will not work
+dotnet-svcutil --sync http://127.0.0.1:5020/Service

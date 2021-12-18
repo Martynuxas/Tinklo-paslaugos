@@ -1,0 +1,63 @@
+{
+   // Use IntelliSense to find out which attributes exist for C# debugging
+   // Use hover for the description of the existing attributes
+   // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+   "version": "0.2.0",
+   "configurations": [
+        {
+            "name": "ServerRest",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-ServerRest",
+            "program": "${workspaceFolder}/ServerRest/bin/Debug/net5.0/Server.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/ServerRest",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "TankerAdapter",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-TankerAdapter",
+            "program": "${workspaceFolder}/TankerAdapter/bin/Debug/net5.0/Server.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/TankerAdapter",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "ClientAdapter",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-ClientAdapter",
+            "program": "${workspaceFolder}/ClientAdapter/bin/Debug/net5.0/Server.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/ClientAdapter",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "TankerSoap",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-TankerSoap",
+            "program": "${workspaceFolder}/TankerSoap/bin/Debug/net5.0/Tanker.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/TankerSoap",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "ClientGrpc",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-ClientGrpc",
+            "program": "${workspaceFolder}/ClientGrpc/bin/Debug/net5.0/Client.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/ClientGrpc",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}
